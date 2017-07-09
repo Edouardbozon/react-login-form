@@ -8,4 +8,4 @@ const handleSubmit = (e, data) => {
     return axios.post('https://requestb.in/12b7sto1', { data });
 };
 
-ReactDOM.render(<Login title="Login" handleSubmit={handleSubmit} />, document.getElementById('root'));
+ReactDOM.render(<Login title="Login" async={false} action="login" />, document.getElementById('root'));
